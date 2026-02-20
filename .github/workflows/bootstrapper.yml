@@ -24,7 +24,7 @@ jobs:
 
       - name: Convert to Safari project
         run: |
-          xcrun safari-web-extension-converter dist \
+          xcrun safari-web-extension-converter dist/chrome \
             --project-location safari-wrapper \
             --app-name BetterSeqtaPlus \
             --bundle-identifier com.yourname.betterseqtaplus \
