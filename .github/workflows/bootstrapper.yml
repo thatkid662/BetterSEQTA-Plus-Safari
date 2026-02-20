@@ -1,0 +1,37 @@
+name: Bootstrap Safari Wrapper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Convert to Safari project
+        run: |
+          xcrun safari-web-extension-converter dist \
+            --project-location safari-wrapper \
+            --app-name BetterSeqtaPlus \
+            --bundle-identifier com.yourname.betterseqtaplus \
+            --force
+
+      - name: Upload Safari project
+        uses: actions/upload-artifact@v4
+        with:
+          name: safari-wrapper
+          path: safari-wrapper
