@@ -13,38 +13,43 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # # ---------- Build Node Extension ----------
-      # - name: Setup Node
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 20.x
+      # ---------- Build Node Extension ----------
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
 
-      # - name: Install dependencies
-      #   run: npm install --legacy-peer-deps
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-      # - name: Build extension
-      #   run: npm run build
+      - name: Build extension
+        run: npm run build
 
-      # # ---------- Replace Safari Extension Files ----------
-      # - name: Copy extension into macOS Extension
-      #   run: |
-      #     mkdir -p BetterSeqtaPlus/macOS\ \(Extension\)/Resources
-      #     rm -rf BetterSeqtaPlus/macOS\ \(Extension\)/Resources/*
-      #     cp -R dist/* BetterSeqtaPlus/macOS\ \(Extension\)/Resources/
+      # ---------- Replace Safari Extension Files ----------
+      - name: Copy extension into macOS Extension
+        run: |
+          mkdir -p BetterSeqtaPlus/macOS\ \(Extension\)/Resources
+          rm -rf BetterSeqtaPlus/macOS\ \(Extension\)/Resources/*
+          cp -R dist/* BetterSeqtaPlus/macOS\ \(Extension\)/Resources/
 
       # ---------- Build macOS App (Unsigned) ----------
       - name: Build macOS App
-        run: xcodebuild -project BetterSeqtaPlus/BetterSeqtaPlus.xcodeproj -list
+        run: xcodebuild \
+            -project xcodeproject/BetterSeqtaPlus.xcodeproj \
+            -scheme "BetterSeqtaPlus Extension (macOS)" \
+            -configuration Release \
+            -derivedDataPath build \
+            build
 
-      # # ---------- Package .app ----------
-      # - name: Package .app
-      #   run: |
-      #     cd build/Build/Products/Release
-      #     zip -r BetterSeqtaPlus-macOS.zip BetterSeqtaPlus.app
+      # ---------- Package .app ----------
+      - name: Package .app
+        run: |
+          cd build/Build/Products/Release
+          zip -r BetterSeqtaPlus-macOS.zip BetterSeqtaPlus.app
 
-      # # ---------- Upload Artifact ----------
-      # - name: Upload macOS app
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: BetterSeqtaPlus-macOS
-      #     path: build/Build/Products/Release/BetterSeqtaPlus-macOS.zip
+      # ---------- Upload Artifact ----------
+      - name: Upload macOS app
+        uses: actions/upload-artifact@v4
+        with:
+          name: BetterSeqtaPlus-macOS
+          path: build/Build/Products/Release/BetterSeqtaPlus-macOS.zip
