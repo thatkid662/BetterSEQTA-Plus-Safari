@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43C670002F48128700D1BD2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C66FFF2F48128700D1BD2F /* AppDelegate.swift */; };
+		43C670022F48128700D1BD2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C670012F48128700D1BD2F /* SceneDelegate.swift */; };
+		43C670052F48128700D1BD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C670032F48128700D1BD2F /* LaunchScreen.storyboard */; };
+		43C670082F48128700D1BD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C670062F48128700D1BD2F /* Main.storyboard */; };
+		43C670112F48128700D1BD2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C670102F48128700D1BD2F /* AppDelegate.swift */; };
+		43C670142F48128700D1BD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C670122F48128700D1BD2F /* Main.storyboard */; };
+		43C6701C2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 43C6701B2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43C670262F48128700D1BD2F /* BetterSeqtaPlus Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 43C670252F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43C6702C2F48128700D1BD2F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FEF2F48128400D1BD2F /* Main.html */; };
+		43C6702D2F48128700D1BD2F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FEF2F48128400D1BD2F /* Main.html */; };
+		43C6702E2F48128700D1BD2F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF12F48128400D1BD2F /* Icon.png */; };
+		43C6702F2F48128700D1BD2F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF12F48128400D1BD2F /* Icon.png */; };
+		43C670302F48128700D1BD2F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF22F48128400D1BD2F /* Style.css */; };
+		43C670312F48128700D1BD2F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF22F48128400D1BD2F /* Style.css */; };
+		43C670322F48128700D1BD2F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF32F48128400D1BD2F /* Script.js */; };
+		43C670332F48128700D1BD2F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF32F48128400D1BD2F /* Script.js */; };
+		43C670342F48128700D1BD2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C66FF42F48128400D1BD2F /* ViewController.swift */; };
+		43C670352F48128700D1BD2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C66FF42F48128400D1BD2F /* ViewController.swift */; };
+		43C670362F48128700D1BD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF52F48128700D1BD2F /* Assets.xcassets */; };
+		43C670372F48128700D1BD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C66FF52F48128700D1BD2F /* Assets.xcassets */; };
+		43C670382F48128700D1BD2F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C66FF72F48128700D1BD2F /* SafariWebExtensionHandler.swift */; };
+		43C670392F48128700D1BD2F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C66FF72F48128700D1BD2F /* SafariWebExtensionHandler.swift */; };
+		43C670502F48128800D1BD2F /* interface in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704B2F48128800D1BD2F /* interface */; };
+		43C670512F48128800D1BD2F /* service-worker-loader.js in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704C2F48128800D1BD2F /* service-worker-loader.js */; };
+		43C670522F48128800D1BD2F /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704D2F48128800D1BD2F /* resources */; };
+		43C670532F48128800D1BD2F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704E2F48128800D1BD2F /* manifest.json */; };
+		43C670542F48128800D1BD2F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704F2F48128800D1BD2F /* assets */; };
+		43C670552F48128800D1BD2F /* interface in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704B2F48128800D1BD2F /* interface */; };
+		43C670562F48128800D1BD2F /* service-worker-loader.js in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704C2F48128800D1BD2F /* service-worker-loader.js */; };
+		43C670572F48128800D1BD2F /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704D2F48128800D1BD2F /* resources */; };
+		43C670582F48128800D1BD2F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704E2F48128800D1BD2F /* manifest.json */; };
+		43C670592F48128800D1BD2F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 43C6704F2F48128800D1BD2F /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43C6701D2F48128700D1BD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C66FE92F48128400D1BD2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C6701A2F48128700D1BD2F;
+			remoteInfo = "BetterSeqtaPlus Extension (iOS)";
+		};
+		43C670272F48128700D1BD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C66FE92F48128400D1BD2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C670242F48128700D1BD2F;
+			remoteInfo = "BetterSeqtaPlus Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43C6703F2F48128700D1BD2F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43C6701C2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670462F48128700D1BD2F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43C670262F48128700D1BD2F /* BetterSeqtaPlus Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43C66FF02F48128400D1BD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		43C66FF12F48128400D1BD2F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		43C66FF22F48128400D1BD2F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		43C66FF32F48128400D1BD2F /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		43C66FF42F48128400D1BD2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43C66FF52F48128700D1BD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43C66FF72F48128700D1BD2F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		43C66FFC2F48128700D1BD2F /* BetterSeqtaPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterSeqtaPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C66FFF2F48128700D1BD2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43C670012F48128700D1BD2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43C670042F48128700D1BD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43C670072F48128700D1BD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43C670092F48128700D1BD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C6700E2F48128700D1BD2F /* BetterSeqtaPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterSeqtaPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C670102F48128700D1BD2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43C670132F48128700D1BD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43C670152F48128700D1BD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C670162F48128700D1BD2F /* BetterSeqtaPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterSeqtaPlus.entitlements; sourceTree = "<group>"; };
+		43C6701B2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BetterSeqtaPlus Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C670202F48128700D1BD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C670252F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BetterSeqtaPlus Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C6702A2F48128700D1BD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C6702B2F48128700D1BD2F /* BetterSeqtaPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterSeqtaPlus.entitlements; sourceTree = "<group>"; };
+		43C6704B2F48128800D1BD2F /* interface */ = {isa = PBXFileReference; lastKnownFileType = folder; name = interface; path = ../../../dist/chrome/interface; sourceTree = "<group>"; };
+		43C6704C2F48128800D1BD2F /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "../../../dist/chrome/service-worker-loader.js"; sourceTree = "<group>"; };
+		43C6704D2F48128800D1BD2F /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = ../../../dist/chrome/resources; sourceTree = "<group>"; };
+		43C6704E2F48128800D1BD2F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/chrome/manifest.json; sourceTree = "<group>"; };
+		43C6704F2F48128800D1BD2F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../dist/chrome/assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43C66FF92F48128700D1BD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C6700B2F48128700D1BD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670182F48128700D1BD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670222F48128700D1BD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43C66FE82F48128400D1BD2F = {
+			isa = PBXGroup;
+			children = (
+				43C66FED2F48128400D1BD2F /* Shared (App) */,
+				43C66FF62F48128700D1BD2F /* Shared (Extension) */,
+				43C66FFE2F48128700D1BD2F /* iOS (App) */,
+				43C6700F2F48128700D1BD2F /* macOS (App) */,
+				43C6701F2F48128700D1BD2F /* iOS (Extension) */,
+				43C670292F48128700D1BD2F /* macOS (Extension) */,
+				43C66FFD2F48128700D1BD2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43C66FED2F48128400D1BD2F /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				43C66FF42F48128400D1BD2F /* ViewController.swift */,
+				43C66FF52F48128700D1BD2F /* Assets.xcassets */,
+				43C66FEE2F48128400D1BD2F /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		43C66FEE2F48128400D1BD2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43C66FEF2F48128400D1BD2F /* Main.html */,
+				43C66FF12F48128400D1BD2F /* Icon.png */,
+				43C66FF22F48128400D1BD2F /* Style.css */,
+				43C66FF32F48128400D1BD2F /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43C66FF62F48128700D1BD2F /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				43C6704A2F48128800D1BD2F /* Resources */,
+				43C66FF72F48128700D1BD2F /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		43C66FFD2F48128700D1BD2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43C66FFC2F48128700D1BD2F /* BetterSeqtaPlus.app */,
+				43C6700E2F48128700D1BD2F /* BetterSeqtaPlus.app */,
+				43C6701B2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */,
+				43C670252F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43C66FFE2F48128700D1BD2F /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				43C66FFF2F48128700D1BD2F /* AppDelegate.swift */,
+				43C670012F48128700D1BD2F /* SceneDelegate.swift */,
+				43C670032F48128700D1BD2F /* LaunchScreen.storyboard */,
+				43C670062F48128700D1BD2F /* Main.storyboard */,
+				43C670092F48128700D1BD2F /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		43C6700F2F48128700D1BD2F /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				43C670102F48128700D1BD2F /* AppDelegate.swift */,
+				43C670122F48128700D1BD2F /* Main.storyboard */,
+				43C670152F48128700D1BD2F /* Info.plist */,
+				43C670162F48128700D1BD2F /* BetterSeqtaPlus.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		43C6701F2F48128700D1BD2F /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				43C670202F48128700D1BD2F /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		43C670292F48128700D1BD2F /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				43C6702A2F48128700D1BD2F /* Info.plist */,
+				43C6702B2F48128700D1BD2F /* BetterSeqtaPlus.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		43C6704A2F48128800D1BD2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43C6704B2F48128800D1BD2F /* interface */,
+				43C6704C2F48128800D1BD2F /* service-worker-loader.js */,
+				43C6704D2F48128800D1BD2F /* resources */,
+				43C6704E2F48128800D1BD2F /* manifest.json */,
+				43C6704F2F48128800D1BD2F /* assets */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43C66FFB2F48128700D1BD2F /* BetterSeqtaPlus (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C670402F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus (iOS)" */;
+			buildPhases = (
+				43C66FF82F48128700D1BD2F /* Sources */,
+				43C66FF92F48128700D1BD2F /* Frameworks */,
+				43C66FFA2F48128700D1BD2F /* Resources */,
+				43C6703F2F48128700D1BD2F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43C6701E2F48128700D1BD2F /* PBXTargetDependency */,
+			);
+			name = "BetterSeqtaPlus (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "BetterSeqtaPlus (iOS)";
+			productReference = 43C66FFC2F48128700D1BD2F /* BetterSeqtaPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43C6700D2F48128700D1BD2F /* BetterSeqtaPlus (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C670472F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus (macOS)" */;
+			buildPhases = (
+				43C6700A2F48128700D1BD2F /* Sources */,
+				43C6700B2F48128700D1BD2F /* Frameworks */,
+				43C6700C2F48128700D1BD2F /* Resources */,
+				43C670462F48128700D1BD2F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43C670282F48128700D1BD2F /* PBXTargetDependency */,
+			);
+			name = "BetterSeqtaPlus (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "BetterSeqtaPlus (macOS)";
+			productReference = 43C6700E2F48128700D1BD2F /* BetterSeqtaPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43C6701A2F48128700D1BD2F /* BetterSeqtaPlus Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C6703C2F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus Extension (iOS)" */;
+			buildPhases = (
+				43C670172F48128700D1BD2F /* Sources */,
+				43C670182F48128700D1BD2F /* Frameworks */,
+				43C670192F48128700D1BD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BetterSeqtaPlus Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "BetterSeqtaPlus Extension (iOS)";
+			productReference = 43C6701B2F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		43C670242F48128700D1BD2F /* BetterSeqtaPlus Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C670432F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus Extension (macOS)" */;
+			buildPhases = (
+				43C670212F48128700D1BD2F /* Sources */,
+				43C670222F48128700D1BD2F /* Frameworks */,
+				43C670232F48128700D1BD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BetterSeqtaPlus Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "BetterSeqtaPlus Extension (macOS)";
+			productReference = 43C670252F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43C66FE92F48128400D1BD2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					43C66FFB2F48128700D1BD2F = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					43C6700D2F48128700D1BD2F = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					43C6701A2F48128700D1BD2F = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					43C670242F48128700D1BD2F = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 43C66FEC2F48128400D1BD2F /* Build configuration list for PBXProject "BetterSeqtaPlus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43C66FE82F48128400D1BD2F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 43C66FFD2F48128700D1BD2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43C66FFB2F48128700D1BD2F /* BetterSeqtaPlus (iOS) */,
+				43C6700D2F48128700D1BD2F /* BetterSeqtaPlus (macOS) */,
+				43C6701A2F48128700D1BD2F /* BetterSeqtaPlus Extension (iOS) */,
+				43C670242F48128700D1BD2F /* BetterSeqtaPlus Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43C66FFA2F48128700D1BD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C6702E2F48128700D1BD2F /* Icon.png in Resources */,
+				43C670052F48128700D1BD2F /* LaunchScreen.storyboard in Resources */,
+				43C6702C2F48128700D1BD2F /* Main.html in Resources */,
+				43C670322F48128700D1BD2F /* Script.js in Resources */,
+				43C670362F48128700D1BD2F /* Assets.xcassets in Resources */,
+				43C670082F48128700D1BD2F /* Main.storyboard in Resources */,
+				43C670302F48128700D1BD2F /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C6700C2F48128700D1BD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C6702F2F48128700D1BD2F /* Icon.png in Resources */,
+				43C670312F48128700D1BD2F /* Style.css in Resources */,
+				43C670142F48128700D1BD2F /* Main.storyboard in Resources */,
+				43C670332F48128700D1BD2F /* Script.js in Resources */,
+				43C670372F48128700D1BD2F /* Assets.xcassets in Resources */,
+				43C6702D2F48128700D1BD2F /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670192F48128700D1BD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670592F48128800D1BD2F /* assets in Resources */,
+				43C670582F48128800D1BD2F /* manifest.json in Resources */,
+				43C670552F48128800D1BD2F /* interface in Resources */,
+				43C670572F48128800D1BD2F /* resources in Resources */,
+				43C670562F48128800D1BD2F /* service-worker-loader.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670232F48128700D1BD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670542F48128800D1BD2F /* assets in Resources */,
+				43C670532F48128800D1BD2F /* manifest.json in Resources */,
+				43C670502F48128800D1BD2F /* interface in Resources */,
+				43C670522F48128800D1BD2F /* resources in Resources */,
+				43C670512F48128800D1BD2F /* service-worker-loader.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43C66FF82F48128700D1BD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670342F48128700D1BD2F /* ViewController.swift in Sources */,
+				43C670002F48128700D1BD2F /* AppDelegate.swift in Sources */,
+				43C670022F48128700D1BD2F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C6700A2F48128700D1BD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670352F48128700D1BD2F /* ViewController.swift in Sources */,
+				43C670112F48128700D1BD2F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670172F48128700D1BD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670382F48128700D1BD2F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C670212F48128700D1BD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C670392F48128700D1BD2F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43C6701E2F48128700D1BD2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43C6701A2F48128700D1BD2F /* BetterSeqtaPlus Extension (iOS) */;
+			targetProxy = 43C6701D2F48128700D1BD2F /* PBXContainerItemProxy */;
+		};
+		43C670282F48128700D1BD2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43C670242F48128700D1BD2F /* BetterSeqtaPlus Extension (macOS) */;
+			targetProxy = 43C670272F48128700D1BD2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43C66FEF2F48128400D1BD2F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C66FF02F48128400D1BD2F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		43C670032F48128700D1BD2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C670042F48128700D1BD2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43C670062F48128700D1BD2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C670072F48128700D1BD2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43C670122F48128700D1BD2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C670132F48128700D1BD2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43C6703A2F48128700D1BD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43C6703B2F48128700D1BD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		43C6703D2F48128700D1BD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterSeqtaPlus Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus.Extension;
+				PRODUCT_NAME = "BetterSeqtaPlus Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43C6703E2F48128700D1BD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterSeqtaPlus Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus.Extension;
+				PRODUCT_NAME = "BetterSeqtaPlus Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43C670412F48128700D1BD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BetterSeqtaPlus;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus;
+				PRODUCT_NAME = BetterSeqtaPlus;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43C670422F48128700D1BD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BetterSeqtaPlus;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus;
+				PRODUCT_NAME = BetterSeqtaPlus;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43C670442F48128700D1BD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BetterSeqtaPlus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterSeqtaPlus Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus.Extension;
+				PRODUCT_NAME = "BetterSeqtaPlus Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43C670452F48128700D1BD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BetterSeqtaPlus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterSeqtaPlus Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus.Extension;
+				PRODUCT_NAME = "BetterSeqtaPlus Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		43C670482F48128700D1BD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BetterSeqtaPlus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BetterSeqtaPlus;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus;
+				PRODUCT_NAME = BetterSeqtaPlus;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43C670492F48128700D1BD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BetterSeqtaPlus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BetterSeqtaPlus;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BetterSeqtaPlus;
+				PRODUCT_NAME = BetterSeqtaPlus;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43C66FEC2F48128400D1BD2F /* Build configuration list for PBXProject "BetterSeqtaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C6703A2F48128700D1BD2F /* Debug */,
+				43C6703B2F48128700D1BD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C6703C2F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C6703D2F48128700D1BD2F /* Debug */,
+				43C6703E2F48128700D1BD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C670402F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C670412F48128700D1BD2F /* Debug */,
+				43C670422F48128700D1BD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C670432F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C670442F48128700D1BD2F /* Debug */,
+				43C670452F48128700D1BD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C670472F48128700D1BD2F /* Build configuration list for PBXNativeTarget "BetterSeqtaPlus (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C670482F48128700D1BD2F /* Debug */,
+				43C670492F48128700D1BD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43C66FE92F48128400D1BD2F /* Project object */;
+}
