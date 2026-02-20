@@ -34,7 +34,8 @@ jobs:
 
       # ---------- Build macOS App (Unsigned) ----------
       - name: Build macOS App
-        run: xcodebuild -project BetterSeqtaPlus/BetterSeqtaPlus.xcodeproj -scheme "BetterSeqtaPlus Extension (macOS)" -configuration Release -derivedDataPath build build
+        run: xcodebuild -project BetterSeqtaPlus/BetterSeqtaPlus.xcodeproj -list
+        #-scheme "BetterSeqtaPlus Extension (macOS)" -configuration Release -derivedDataPath build build
 
       # ---------- Package .app ----------
       - name: Package .app
