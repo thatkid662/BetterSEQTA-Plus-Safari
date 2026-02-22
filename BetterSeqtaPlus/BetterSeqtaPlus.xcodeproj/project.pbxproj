@@ -107,11 +107,11 @@
 		43C670252F48128700D1BD2F /* BetterSeqtaPlus Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BetterSeqtaPlus Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C6702A2F48128700D1BD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C6702B2F48128700D1BD2F /* BetterSeqtaPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterSeqtaPlus.entitlements; sourceTree = "<group>"; };
-		43C6704B2F48128800D1BD2F /* interface */ = {isa = PBXFileReference; lastKnownFileType = folder; name = interface; path = ../../../dist/chrome/interface; sourceTree = "<group>"; };
-		43C6704C2F48128800D1BD2F /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "../../../dist/chrome/service-worker-loader.js"; sourceTree = "<group>"; };
-		43C6704D2F48128800D1BD2F /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = ../../../dist/chrome/resources; sourceTree = "<group>"; };
-		43C6704E2F48128800D1BD2F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/chrome/manifest.json; sourceTree = "<group>"; };
-		43C6704F2F48128800D1BD2F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../dist/chrome/assets; sourceTree = "<group>"; };
+		43C6704B2F48128800D1BD2F /* interface */ = {isa = PBXFileReference; lastKnownFileType = folder; name = interface; path = /Users/runner/work/BetterSEQTA-Plus-Safari/dist/chrome/interface; sourceTree = "<group>"; };
+		43C6704C2F48128800D1BD2F /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "/Users/runner/work/BetterSEQTA-Plus-Safari/dist/chrome/service-worker-loader.js"; sourceTree = "<group>"; };
+		43C6704D2F48128800D1BD2F /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = /Users/runner/work/BetterSEQTA-Plus-Safari/dist/chrome/resources; sourceTree = "<group>"; };
+		43C6704E2F48128800D1BD2F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = /Users/runner/work/BetterSEQTA-Plus-Safari/dist/chrome/manifest.json; sourceTree = "<group>"; };
+		43C6704F2F48128800D1BD2F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = /Users/runner/work/BetterSEQTA-Plus-Safari/dist/chrome/assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -785,7 +785,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
+					"@executable_path//Users/runner/work/BetterSEQTA-Plus-Safari/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
@@ -816,7 +816,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
+					"@executable_path//Users/runner/work/BetterSEQTA-Plus-Safari/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
