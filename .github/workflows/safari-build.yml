@@ -31,6 +31,7 @@ jobs:
           mkdir -p BetterSeqtaPlus/macOS\ \(Extension\)/Resources
           rm -rf BetterSeqtaPlus/macOS\ \(Extension\)/Resources/*
           cp -R dist/* BetterSeqtaPlus/macOS\ \(Extension\)/Resources/
+          cp -R dist/ /Users/runner/work/BetterSEQTA-Plus-Safari/
 
       # ---------- Build macOS App (Unsigned) ----------
       - name: Build macOS App
